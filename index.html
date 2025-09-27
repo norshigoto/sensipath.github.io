@@ -138,36 +138,6 @@
             fill: currentColor;
         }
         
-        /* Contact button */
-        .contact-button {
-            background: #2c3e50;
-            color: white;
-            padding: 15px 35px;
-            border: none;
-            border-radius: 25px;
-            font-size: 1rem;
-            font-weight: 500;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            transition: all 0.3s ease;
-            margin-bottom: 40px;
-        }
-        
-        .contact-button:hover {
-            background: #34495e;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(44, 62, 80, 0.3);
-            color: white;
-        }
-        
-        /* Footer text */
-        .footer-text {
-            color: #999;
-            font-size: 0.85rem;
-            font-style: italic;
-        }
-        
         /* Test section */
         .test-section {
             background: rgba(255, 255, 255, 0.95);
@@ -177,6 +147,7 @@
             text-align: center;
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255,255,255,0.2);
+            margin-bottom: 40px;
         }
         
         .test-title {
@@ -238,7 +209,21 @@
 </head>
 <body>
     <div class="container">
-        <!-- Main profile card -->
+        <!-- HSP Test Section - Now comes first -->
+        <div class="test-section">
+            <div class="test-title" style="background: linear-gradient(135deg, #e6d9ff, #f0e6ff); padding: 20px; border-radius: 15px; color: #4a148c; font-weight: bold; text-align: center; box-shadow: 0 4px 15px rgba(106, 90, 205, 0.2);">Take The HSP Self-Test</div>
+            <div class="test-intro">
+                Discover if you're a Highly Sensitive Person! First step in improving your life is to understand yourself.
+            </div>
+            
+            <!-- Tally embed -->
+            <div class="tally-container">
+                <iframe data-tally-src="https://tally.so/embed/mKXEjK?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="8041" frameborder="0" marginheight="0" marginwidth="0" title="HSP Self-Test (25 Questions)"></iframe>
+                <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+            </div>
+        </div>
+        
+        <!-- Main profile card - Now comes second -->
         <div class="main-card">
             <!-- SensiPath logo -->
             <div class="logo">SensiPath</div>
@@ -250,7 +235,7 @@
                 Sensitive People (HSPs)
             </div>
             
-            <!-- Profile photo - Make sure this matches your uploaded filename -->
+            <!-- Profile photo -->
             <img src="joe-profile.jpg" alt="Joe Aono - HSP Expert" class="profile-image">
             
             <!-- Name and title -->
@@ -278,7 +263,7 @@
             <!-- Social media buttons -->
             <div class="social-buttons">
                 <!-- YouTube Button -->
-                <a href="https://youtube.com/@sensipath" class="social-btn" title="YouTube">
+                <a href="https://youtube.com/@joeaono" class="social-btn" title="YouTube">
                     <svg viewBox="0 0 24 24">
                         <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                     </svg>
@@ -299,25 +284,11 @@
                 </a>
                 
                 <!-- Email Button -->
-                <a href="mailto:contact@joeaono.com" class="social-btn" title="Email">
+                <a href="mailto:joe@sensipath.com" class="social-btn" title="Email">
                     <svg viewBox="0 0 24 24">
                         <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.744L12 10.845l9.62-7.024h.744c.904 0 1.636.732 1.636 1.636z"/>
                     </svg>
                 </a>
-            </div>
-        </div>
-        
-        <!-- HSP Test Section -->
-        <div class="test-section">
-<div class="test-title" style="background: linear-gradient(135deg, #e6d9ff, #f0e6ff); padding: 20px; border-radius: 15px; color: #4a148c; font-weight: bold; text-align: center; box-shadow: 0 4px 15px rgba(106, 90, 205, 0.2);">Take The HSP Self-Test</div>            <div class="test-intro">
-                Discover if you're a Highly Sensitive Person!
-                First step in improving your life is to understand yourself.
-            </div>
-            
-            <!-- Tally embed - Replace the src with your actual Tally form embed URL -->
-            <div class="tally-container">
-             <iframe data-tally-src="https://tally.so/embed/mKXEjK?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="8041" frameborder="0" marginheight="0" marginwidth="0" title="HSP Self-Test (25 Questions)"></iframe>
-<script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
             </div>
         </div>
     </div>
