@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSP Self-Test - SensiPath</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.5;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px 0;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Back button */
+        .back-button {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.95);
+            color: #4a148c;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 10px;
+            font-size: 1rem;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+        
+        /* Test section */
+        .test-section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px 30px;
+            border-radius: 25px;
+            box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            margin-bottom: 40px;
+        }
+        
+        .test-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+        
+        .test-intro {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+        
+        /* Tally embed container */
+        .tally-container {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border: 1px solid #eee;
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #666;
+        }
+        
+        .footer a {
+            color: #4a148c;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .test-section {
+                padding: 30px 20px;
+            }
+            
+            .test-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Back to profile button -->
+        <a href="/" class="back-button">← Back to SensiPath</a>
+        
+        <!-- HSP Test Section -->
+        <div class="test-section">
+            <div class="test-title" style="background: linear-gradient(135deg, #e6d9ff, #f0e6ff); padding: 20px; border-radius: 15px; color: #4a148c; font-weight: bold; text-align: center; box-shadow: 0 4px 15px rgba(106, 90, 205, 0.2);">Take The HSP Self-Test</div>
+            <div class="test-intro">
+                Discover if you're a Highly Sensitive Person! First step in improving your life is to understand yourself.
+            </div>
+            
+            <!-- Tally embed -->
+            <div class="tally-container">
+                <iframe data-tally-src="https://tally.so/embed/mKXEjK?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="8041" frameborder="0" marginheight="0" marginwidth="0" title="HSP Self-Test (25 Questions)"></iframe>
+                <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p>Created by <a href="/">Joe Aono – HSP Expert</a></p>
+            <p>© 2025 SensiPath. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
