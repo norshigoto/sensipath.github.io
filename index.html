@@ -38,6 +38,12 @@
             margin-bottom: 40px;
             gap: 8px;
             position: relative;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        .logo-section:hover {
+            opacity: 0.8;
         }
 
         .logo {
@@ -247,7 +253,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="logo-section">
+        <div class="logo-section" onclick="window.location.reload();">
             <div class="logo">
                 <img src="https://norshigoto.github.io/sensipath.github.io/sensipath-logo.PNG" alt="SensiPath Logo">
             </div>
