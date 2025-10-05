@@ -33,6 +33,40 @@
             margin: 0 auto;
             padding: 0 20px;
         }
+
+        /* Logo section */
+        .logo-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+            gap: 8px;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        .logo-section:hover {
+            opacity: 0.8;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .brand-name {
+            font-size: 36px;
+            font-weight: 600;
+            color: #2c3e50;
+            letter-spacing: -1px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
         
         /* Back button */
         .back-button {
@@ -117,11 +151,28 @@
             .test-title {
                 font-size: 1.5rem;
             }
+
+            .logo {
+                width: 40px;
+                height: 40px;
+            }
+
+            .brand-name {
+                font-size: 28px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Logo Section -->
+        <div class="logo-section" onclick="window.location.href='/';">
+            <div class="logo">
+                <img src="https://joeaono.com/sensipath-logo.PNG" alt="SensiPath Logo">
+            </div>
+            <h1 class="brand-name">SensiPath</h1>
+        </div>
+
         <!-- Back to profile button -->
         <a href="/" class="back-button">← Back to SensiPath</a>
         
