@@ -3,47 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HSP Self-Test - SensiPath</title>
-    <link rel="canonical" href="https://joeaono.com/hsp-self-test/" />
+    <title>SensiPath - Empower Your Sensitive Traits</title>
+    <link rel="canonical" href="https://joeaono.com/" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZM6HPGHR4Q"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-ZM6HPGHR4Q');
-    </script>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
-            font-family: 'Georgia', serif;
-            line-height: 1.5;
-            color: #333;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
             min-height: 100vh;
-            padding: 20px 0;
-        }
-        
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
         }
 
-        /* Logo section */
+        .container {
+            background: white;
+            border-radius: 24px;
+            padding: 60px 40px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
         .logo-section {
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
             gap: 8px;
+            position: relative;
             cursor: pointer;
             transition: opacity 0.2s;
         }
@@ -53,124 +50,212 @@
         }
 
         .logo {
-            width: 50px;
-            height: 50px;
+            width: 65px;
+            height: 65px;
+            position: relative;
         }
 
         .logo img {
             width: 100%;
             height: 100%;
             object-fit: contain;
-            background: transparent;
-            mix-blend-mode: multiply;
         }
 
         .brand-name {
-            font-size: 36px;
+            font-size: 48px;
             font-weight: 600;
             color: #2c3e50;
             letter-spacing: -1px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
         }
-        
-        /* Back button */
-        .back-button {
-            display: inline-block;
-            background: rgba(255, 255, 255, 0.95);
-            color: #4a148c;
-            text-decoration: none;
-            padding: 12px 25px;
-            border-radius: 10px;
-            font-size: 1rem;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-        }
-        
-        .back-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-        }
-        
-        /* Test section */
-        .test-section {
-            background: rgba(255, 255, 255, 0.95);
-            padding: 40px 30px;
-            border-radius: 25px;
-            box-shadow: 0 15px 45px rgba(0,0,0,0.1);
-            text-align: center;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.2);
+
+        .tagline {
+            font-size: 18px;
+            color: #5a6c7d;
             margin-bottom: 40px;
-        }
-        
-        .test-title {
-            font-size: 1.8rem;
-            color: #2c3e50;
-            margin-bottom: 20px;
-            font-weight: 400;
-        }
-        
-        .test-intro {
-            font-size: 1rem;
-            color: #666;
-            margin-bottom: 25px;
             line-height: 1.6;
         }
-        
-        /* Tally embed container */
-        .tally-container {
-            border-radius: 15px;
+
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 24px;
+            margin: 0 auto 30px;
             overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-            border: 1px solid #eee;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            object-fit: cover;
         }
-        
-        /* Footer */
-        .footer {
-            text-align: center;
-            padding: 30px 20px;
-            color: #666;
+
+        .profile-name {
+            font-size: 28px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 25px;
         }
-        
-        .footer a {
-            color: #4a148c;
+
+        .mission-text {
+            font-size: 16px;
+            color: #5a6c7d;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .credentials {
+            font-size: 16px;
+            color: #5a6c7d;
+            margin-bottom: 25px;
+        }
+
+        .hsp-description {
+            font-size: 15px;
+            color: #5a6c7d;
+            margin-bottom: 40px;
+            line-height: 1.7;
+        }
+
+        .test-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
             text-decoration: none;
+            padding: 18px 48px;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+            margin-bottom: 30px;
+        }
+
+        .test-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(102, 126, 234, 0.5);
+        }
+
+        .test-button:active {
+            transform: translateY(0);
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 30px;
+        }
+
+        .social-btn {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f0f0f0;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .social-btn svg {
+            width: 24px;
+            height: 24px;
+            fill: #333;
+        }
+
+        .social-btn:nth-child(1):hover {
+            background: #FF0000;
+        }
+
+        .social-btn:nth-child(1):hover svg {
+            fill: white;
+        }
+
+        .social-btn:nth-child(2):hover {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+
+        .social-btn:nth-child(2):hover svg {
+            fill: white;
+        }
+
+        .social-btn:nth-child(3):hover {
+            background: #000000;
+        }
+
+        .social-btn:nth-child(3):hover svg {
+            fill: white;
+        }
+
+        .social-btn:nth-child(4):hover {
+            background: #667eea;
+        }
+
+        .social-btn:nth-child(4):hover svg {
+            fill: white;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #7a7a7a;
+            line-height: 1.8;
+        }
+
+        .footer-disclaimer {
+            margin-bottom: 8px;
+        }
+
+        .footer-copyright {
             font-weight: 500;
+            color: #5a6c7d;
         }
-        
-        .footer a:hover {
-            text-decoration: underline;
-        }
-        
-        /* Mobile responsive */
-        @media (max-width: 768px) {
+
+        @media (max-width: 600px) {
             .container {
-                padding: 0 15px;
-            }
-            
-            .test-section {
-                padding: 30px 20px;
-            }
-            
-            .test-title {
-                font-size: 1.5rem;
+                padding: 40px 24px;
             }
 
             .logo {
-                width: 40px;
-                height: 40px;
+                width: 50px;
+                height: 50px;
             }
 
             .brand-name {
-                font-size: 28px;
+                font-size: 36px;
+            }
+
+            .tagline {
+                font-size: 16px;
+            }
+
+            .profile-name {
+                font-size: 24px;
+            }
+
+            .social-buttons {
+                gap: 12px;
+            }
+
+            .social-btn {
+                width: 44px;
+                height: 44px;
+            }
+
+            .footer {
+                margin-top: 40px;
+                padding-top: 25px;
+                font-size: 12px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Logo Section -->
         <div class="logo-section" onclick="window.location.href='/';">
             <div class="logo">
                 <img src="https://joeaono.com/Sensipath-Logo-Green-No-Background.png" alt="SensiPath Logo">
@@ -178,27 +263,79 @@
             <h1 class="brand-name">SensiPath</h1>
         </div>
 
-        <!-- Back to profile button -->
-        <a href="/" class="back-button">← Back to SensiPath</a>
+        <p class="tagline">
+            "Empower your Sensitive Traits" ---<br>
+            Simple to follow solutions for Highly<br>
+            Sensitive People (HSPs)
+        </p>
+
+        <!-- Profile photo -->
+        <img src="joe-profile.jpg" alt="Joe Aono - HSP Expert" class="profile-image">
         
-        <!-- HSP Test Section -->
-        <div class="test-section">
-            <div class="test-title" style="background: linear-gradient(135deg, #e6d9ff, #f0e6ff); padding: 20px; border-radius: 15px; color: #4a148c; font-weight: bold; text-align: center; box-shadow: 0 4px 15px rgba(106, 90, 205, 0.2);">Take The HSP Self-Test</div>
-            <div class="test-intro">
-                Discover if you're a Highly Sensitive Person! First step in improving your life is to understand yourself.
-            </div>
-            
-            <!-- Tally embed -->
-            <div class="tally-container">
-                <iframe data-tally-src="https://tally.so/embed/mKXEjK?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="8041" frameborder="0" marginheight="0" marginwidth="0" title="HSP Self-Test (25 Questions)"></iframe>
-                <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
-            </div>
+        <!-- Name and title -->
+        <div class="profile-name">Joe Aono – HSP Expert</div>
+        
+        <!-- Mission statement -->
+        <div class="mission-text">
+            My mission is to turn people's "Sensitivity"<br>
+            into "Strength".
         </div>
         
-        <!-- Footer -->
+        <!-- Credentials -->
+        <div class="credentials">
+            Certified in Personality Psychology.
+        </div>
+        
+        <!-- HSP description -->
+        <div class="hsp-description">
+            I'm also a Highly Sensitive Person (HSP) 
+            who overcame a lot of HSP's seemingly 
+            negative traits. I believe I can assist you 
+            too!
+        </div>
+        
+        <!-- Test Button -->
+        <a href="/hsp-self-test/" class="test-button">Take The HSP Self-Test</a>
+        
+        <!-- Social media buttons -->
+        <div class="social-buttons">
+            <!-- YouTube Button -->
+            <a href="https://youtube.com/@sensipath" class="social-btn" title="YouTube">
+                <svg viewBox="0 0 24 24">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+            </a>
+            
+            <!-- Instagram Button -->
+            <a href="https://instagram.com/joeaono" class="social-btn" title="Instagram">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+            </a>
+            
+            <!-- TikTok Button -->
+            <a href="https://tiktok.com/@joeaono" class="social-btn" title="TikTok">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                </svg>
+            </a>
+            
+            <!-- Email Button -->
+            <a href="mailto:contact@sensipath.com" class="social-btn" title="Email">
+                <svg viewBox="0 0 24 24">
+                    <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.744L12 10.845l9.62-7.024h.744c.904 0 1.636.732 1.636 1.636z"/>
+                </svg>
+            </a>
+        </div>
+
+        <!-- Footer Disclaimer -->
         <div class="footer">
-            <p>Created by <a href="/">Joe Aono – HSP Expert</a></p>
-            <p>© 2025 SensiPath. All rights reserved.</p>
+            <div class="footer-disclaimer">
+                All content and materials on this website are protected by copyright law.
+            </div>
+            <div class="footer-copyright">
+                © 2025 SensiPath. All Rights Reserved.
+            </div>
         </div>
     </div>
 </body>
